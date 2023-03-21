@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-dep
+  labels:
+    appname: node-app-deployment
+    component: frontend
+spec:
+  selector:
+    matchLabels:
+      appname: node-app-deployment
+      component: frontend
+  template:
+    metadata:
+      labels:
+        appname: node-app-deployment
+        component: frontend
+    spec:
+      containers:
+      - name: websrv-images
+        image: myappimage:v1.0
+        ports:
+        - containerPort: 8081
