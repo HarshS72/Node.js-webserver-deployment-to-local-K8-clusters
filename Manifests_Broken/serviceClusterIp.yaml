@@ -10,5 +10,4 @@ spec:
   - port: 80
     targetPort: 8081
   selector:
-    apname: node-app-deployment
-    component: frontend
+    appname: node-app-deployment

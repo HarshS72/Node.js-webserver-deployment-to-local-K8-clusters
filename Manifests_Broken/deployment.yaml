@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: websrv-images
-        image: myappimage:v1.0
+        image: 844099387134.dkr.ecr.us-east-1.amazonaws.com/websrv-images:v0.1
         ports:
         - containerPort: 8081
