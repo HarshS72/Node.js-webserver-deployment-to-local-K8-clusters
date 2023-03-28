@@ -8,7 +8,6 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: 8081
+    targetPort: 8080
   selector:
-    apname: node-app-deployment
-    component: frontend
+    appname: node-app-deployment
