@@ -3,12 +3,11 @@ kind: Service
 metadata:
   name: flask-app
   labels:
-    app: flask-app
+    appname: flask-app
     component: greeting
 spec:
   ports:
   - port: 80
-    targetPort: 30000
+    targetPort: 5000
   selector:
-    app: flask-app
-    component: frontend
+    appname: flask-app
