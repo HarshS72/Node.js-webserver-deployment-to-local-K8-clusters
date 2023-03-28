@@ -43,15 +43,15 @@ resource "aws_instance" "k8s" {
     project = "clo835"
   }
 
-  key_name                = "asn2"
+  key_name                = "final"
   monitoring              = true
   disable_api_termination = false
   ebs_optimized           = true
 }
 
 resource "aws_key_pair" "k8s" {
-  key_name   = "asn2"
-  public_key = file("${path.module}/asn2.pub")
+  key_name   = "final"
+  public_key = file("${path.module}/final.pub")
 }
 
 resource "aws_ecr_repository" "websrv_images" {
