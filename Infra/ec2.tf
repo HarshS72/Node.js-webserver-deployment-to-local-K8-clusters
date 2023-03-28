@@ -55,5 +55,5 @@ resource "aws_key_pair" "k8s" {
 }
 
 resource "aws_ecr_repository" "websrv_images" {
-  name = "websrv-images"
+  name = "flask-webserver"
 }
